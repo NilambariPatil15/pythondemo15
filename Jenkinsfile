@@ -11,8 +11,10 @@ pipeline{
 		stage('Build') {
 
 			steps {
+				sh """
 	    	docker build -t npatil15/pythondemo15:latest .
-        docker ps -a
+                 docker ps -a
+		 """
 			}
 		}
 
